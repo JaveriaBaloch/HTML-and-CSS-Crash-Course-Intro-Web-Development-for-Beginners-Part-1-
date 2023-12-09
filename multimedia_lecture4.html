@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiMedia Support</title>
+</head>
+<body>
+    <!-- Image Sample -->
+    <img src="./media/img.jpg" alt="cookies" width="200">
+
+    <!-- Audio Sample -->
+    <audio controls>
+        <source src="./media/OOG_1MG.ogg" type="audio/ogg">
+        <source src="./media/audio.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Video Sample -->
+    <video autoplay controls>
+        <source src="./media/video.mp4">
+    </video>
+
+     <!-- Picture Sample -->
+    <picture>
+        <source srcset="./media/image3.jpg" media="(max-width:600px)"/>
+        <source srcset="./media/imagetwo.jpg" media="(max-width:1000px)"/>
+        <img src="./media/img.jpg" alt="cookies" width="200">
+    </picture>
+</body>
+</html>
