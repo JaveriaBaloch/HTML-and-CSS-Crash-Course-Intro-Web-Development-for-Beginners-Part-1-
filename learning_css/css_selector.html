@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* p, h1{
+            color: navy;
+        } */
+        /* universal selector */
+        *{
+            color: rgb(163, 247, 154);
+        }
+
+        /* Type Selector */
+        h1{
+            color: rgb(92, 115, 241);
+        }
+        body{
+            background-color:black ;
+        }
+        /* Class Selector*/
+        .use_class{
+            color: rgb(221, 217, 155);
+        }
+        .use_class{
+            color: rgb(221, 155, 216) !important;
+        }
+        .class_two{
+            color: rgb(155, 221, 160);
+        }
+        #id_h1{
+            background-color: rgb(239, 181, 181);
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima incidunt totam delectus distinctio perspiciatis, temporibus perferendis beatae, iusto adipisci atque et rem nostrum autem vero fugit libero nemo. Unde, laudantium.</p>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, sit.</b>
+    <h1 class="class_two use_class">Class is used to select me!</h1>
+    <h1 id="id_h1">
+        Id is used to select me!
+    </h1>
+</body>
+</html>
