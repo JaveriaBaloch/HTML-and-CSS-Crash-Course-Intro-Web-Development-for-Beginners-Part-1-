@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors Part three</title>
+    <style>
+        div h1:first-child{
+            color: brown;
+        }
+        div ul :nth-child(3n+1){
+            color: aqua;
+        }
+        .even_list :nth-child(even){
+            color: rgb(255, 0, 230);
+
+        }
+        .odd_list :nth-child(odd){
+            background-color: rgb(0, 255, 170);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Heading 1</h1>
+        <div>
+            <p>
+                <h1>Heading 3</h1>
+            </p>
+        </div>
+        <p>people</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vel facilis sapiente mollitia, delectus voluptate earum ab numquam dolorum quidem aliquam tempore quas.</p>
+        <h1>Heading 1</h1>
+
+        <ul>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+    </div>
+    <h1>Even</h1>
+    <ul class="even_list">
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+    <h1>Odd</h1>
+    <ul class="odd_list">
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+</body>
+</html>
