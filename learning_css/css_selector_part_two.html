@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors Part two</title>
+    <style>
+        /* Descedant Selector */
+        div h1{
+            color: brown;
+        }
+        /* Parent Selector */
+        div > div > h1{
+            color: rgb(42, 165, 122);
+        }
+        
+        /* Adjecent Sibling Selector */
+        p + p{
+            background-color: rgb(67, 84, 193) ;
+        }
+
+        /*  */
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Heading 1</h1>
+        <div>
+            <p>
+                <h1>Heading 3</h1>
+            </p>
+        </div>
+        <p>people</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vel facilis sapiente mollitia, delectus voluptate earum ab numquam dolorum quidem aliquam tempore quas.</p>
+        <ul>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+    </div>
+    <h1>Heading 2</h1>
+</body>
+</html>
