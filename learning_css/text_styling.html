@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Styling</title>
+    <style>
+        p{
+            font: 20px bold sans-serif;
+            color: brown
+        }
+        h1{
+            color: brown;
+            font-size: 10px;
+            font-weight: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h2{
+            direction: rtl;
+        }
+        h3{
+            writing-mode:vertical-rl;
+        }
+        q{
+            quotes: "#" ">>";
+        }
+        .p{
+           text-shadow: 3px 4px 7px blue, 3px 4px 5px rgb(255, 47, 0); 
+          
+        }
+        .p2{
+            letter-spacing: 20px;
+        }
+        .p3{
+         word-spacing: 90px;
+        }
+        .p4{
+            text-indent: 80px;
+        }
+        .p5{
+            /* text-decoration: blue dotted underline; */
+            text-decoration-style: dashed;
+            text-decoration-color: blue;
+            text-decoration-line: underline;
+        }
+        .p6{
+            text-transform: uppercase;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- short hand -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium delectus qui aliquam, nulla deleniti ad eaque beatae quaerat, facere iste earum explicabo dolore officia at illo dolores blanditiis? Qui, quod?</p>
+    <br>
+    <br>
+    <!-- detailed method -->
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <br><br>
+    <h2 id="h2">Let's Code</h2>
+    <h3>Let's Code</h3>
+    <!-- quotes -->
+    <q>Lorem, ipsum dolor.</q>
+    <!-- text-shadow -->
+    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium 
+        delectus qui aliquam, nulla deleniti ad eaque beatae quaerat, facere iste 
+        earum explicabo dolore officia at illo dolores blanditiis? Qui, quod?</p>
+    <br>
+    <!-- letter-spacing -->
+    <div class="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, fugiat. Qui architecto unde iusto suscipit ea vel assumenda tempora neque. Aperiam cumque consectetur nostrum dolorum numquam perspiciatis soluta debitis unde.
+    </div>
+    <br><br>
+     <!-- word-spacing -->
+     <div class="p3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore possimus doloribus aut consectetur, in, impedit alias dolorem, voluptate ea quas sunt ipsa dolorum?
+     </div>
+     <br><br>
+          <!-- text-intend -->
+
+     <div class="p4">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore 
+     possimus doloribus aut consectetur, in, impedit alias dolorem, voluptate 
+     ea quas sunt ipsa dolorum?
+     </div>
+     <br><br>
+     <!-- text-decoration -->
+     <div class="p5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, beatae officiis? Dolores expedita maxime assumenda, facere commodi veniam maiores nam corrupti magnam reiciendis odit eveniet accusantium, deleniti ducimus iste magni?
+     </div>
+     <br><br>
+<!-- text-transform -->
+<div class="p6">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non deserunt assumenda cum in expedita amet quis! Facere tempore sint laborum repellendus molestias quas, quos, maiores iusto similique facilis consectetur deserunt?
+</div>
+</body>
+</html>
