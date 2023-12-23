@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* *{ */
+            /* box-sizing: border-box; */
+            /* margin: 0; */
+            /* padding: 0; */
+        /* } */
+        .div1{
+            
+            width: 100%;
+            background:crimson ;
+            height: 100%;
+            padding: 40px;
+        }
+        .inner1{
+            width: 200px;
+            background:rgb(20, 220, 197) ;
+            height: 200px;
+            margin: 20px; /* All side*/
+            margin: 30px auto 90px;
+            
+        }
+        .inner2{
+         width: 200px;
+         background:rgb(90, 220, 20) ;
+         height: 200px;
+         margin: 20px; /* All side*/
+         margin: 30px auto 90px;
+         border-radius: 30px 20px 30px 80px;
+         border: 9px solid blue;
+         border-style: ridge;
+         border-color: blueviolet;
+         border-width: 90px;
+         padding:300px 0 30px;
+        }
+        table{
+            color: #000;
+            border-spacing: 90px;
+            /* background: #000; */
+        }th,td{
+            padding: 80px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="inner1"></div>
+        <div class="inner2"></div>
+        <table border="1" >
+            <tr>
+                <th>S.no</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kick</td>
+                <td>kick@gmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lidl</td>
+                <td>lidl@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
