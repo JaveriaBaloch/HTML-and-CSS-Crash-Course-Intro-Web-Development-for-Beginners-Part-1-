@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Part 2</title>
+    <style>
+        #div1{
+            width: 100%;
+            padding: 300px 0;
+            background:linear-gradient(to left,rgba(255, 0, 0, 0.708),blue), url(../media/image3.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat:no-repeat ;
+            opacity: 1;
+            background-blend-mode:difference;
+            background-attachment: fixed;
+
+        }
+        #div2{
+            width: 100%;
+            padding: 300px 0;
+            background: url(../media/imagetwo.jpg);
+            background-position: center;
+            background-size: cover;
+            /* filter: blur(20px); */
+            /* filter: brightness(40%); */
+            /* filter: grayscale(100%); */
+            /* filter: hue-rotate(60deg) */
+            /* filter: sepia(50%); */
+        }
+        h1{
+            /* color: linear-gradient(red,blue); */
+            background: linear-gradient(to left,red,blue,yellow);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <br><br>
+    <div id="div2"></div>
+
+    <br><br><br>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+</body>
+</html>
