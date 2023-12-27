@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        nav{
+            /* position: absolute; */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            display: flex;
+            justify-content:space-between ;
+            align-items: center;
+            padding: 2rem 2rem;
+            background: teal;
+            color: aliceblue;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        li{
+            padding: 0 1rem;
+        }
+        li a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        main{
+        }
+        #Home{
+            padding-top: 7rem;
+            height: 100vh;
+            background: rgb(130, 77, 205);
+        }
+        #Services{
+            position: relative;
+            height: 100vh;
+            background: rgb(63, 196, 74);
+        }
+        #About_Us{
+            height: 100vh;
+            background: rgb(196, 76, 172);
+        }
+        #ContactUs{
+            height: 100vh;
+            background: rgb(68, 215, 80);
+        }
+        .sticky{
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Logo</h1>
+        <ul>
+            <li class="nav-items">
+                <a href="#Home">Home</a>
+            </li>
+            <li class="nav-items">
+                <a href="#Services">Services</a>
+            </li>
+            <li class="nav-items">
+                <a href="#About_Us">About Us</a>
+            </li>
+            <li class="nav-items">
+                <a href="#ContactUs">Contact Us
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+
+    
+    <section id="Home">Home</section>
+    <section id="Services">Services
+        <h1 class="sticky">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ut illo dolorem corporis. Ea dolorem officia, hic facere 
+        asperiores soluta provident. Architecto sapiente beatae 
+        porro fuga laboriosam! Cumque vel quasi asperiores 
+        aspernatur optio reprehenderit aliquid impedit molestiae 
+        nam aut, quae magni quaerat est doloribus consequuntur 
+        obcaecati ad dolorem quo magnam ipsa fugit. Ipsa adipisci 
+        itaque laboriosam consequatur quam autem nostrum quo alias 
+        eius molestias excepturi obcaecati libero maiores 
+        praesentium voluptate nesciunt, amet porro labore quidem 
+        nihil atque unde culpa.
+        </h1>
+    </section>
+    <section id="About_Us">About Us</section>
+    <section id="ContactUs">Contact Us</section>
+</main>
+</body>
+</html>
