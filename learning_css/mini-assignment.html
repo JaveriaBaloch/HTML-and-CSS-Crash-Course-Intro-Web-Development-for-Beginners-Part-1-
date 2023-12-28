@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Assignment</title>
+    <style>
+        input[type='checkbox']{
+            position: absolute;
+            transition: all 1s;
+            
+        }
+        label{
+            display: inline-block;
+            position: relative;
+            top: 2px;
+            width: 50px;
+            height: 20px;
+            background: rgb(46, 202, 124);
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        label::before{
+            position: absolute;
+            top: -2px;
+            content: "";
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: green;
+            transition: all 1s;
+        }
+        input[type="checkbox"]:checked + label::before{
+            transform: translateX(30px);
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="check" id="check">
+    <label for="check" id="label"></label>
+</body>
+</html>
