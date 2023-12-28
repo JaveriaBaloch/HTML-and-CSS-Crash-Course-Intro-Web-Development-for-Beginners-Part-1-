@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            animation: myanimation 2s ease-in-out 1s infinite;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            animation: identifier 5s infinite;
+        }
+        @keyframes myanimation{
+            0%{
+                background-color: blue;
+            }
+            50%{
+                background-color: rgb(38, 255, 0);
+            }
+            100%{
+                background-color: blue;
+            }
+        }
+        @keyframes identifier {
+            0%{
+                transform: rotate(0deg) skew(0deg) translateX(0px);
+                background-color: rgb(110, 17, 161);
+            }
+            10%{
+                transform: rotateY(90deg) skew(20deg) translateY(370px);
+                background-color: rgb(17, 84, 161);
+            }
+            25%{
+                transform: rotateY(180deg) skew(0deg) translateY(820px);
+                background-color: rgb(19, 161, 17);
+                border-radius: 50%;
+            }
+            70%{
+                transform: rotateY(90deg) skew(20deg) translateY(370px);
+                background-color: rgb(17, 84, 161);
+            }
+            100%{
+                transform: rotate(0deg) skew(0deg) translateY(0px);
+                background-color: rgb(110, 17, 161);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <br>
+    <div class="box2"></div>
+</body>
+</html>
