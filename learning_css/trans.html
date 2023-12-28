@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Hide the checkbox visually */
+input[type="checkbox"] {
+  position: absolute;}
+
+/* Style the switch label */
+.switch {
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Style the switch handle */
+.switch::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+/* Move the switch handle to the right when the checkbox is checked */
+input[type="checkbox"]:checked + .switch::before {
+  transform: translateX(30px);
+}
+
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="toggleSwitch">
+<label for="toggleSwitch" class="switch"></label>
+
+</body>
+</html>
