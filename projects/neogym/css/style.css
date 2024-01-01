@@ -6,6 +6,7 @@
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 nav.nav{
     display: flex;
@@ -23,12 +24,13 @@ nav.nav ul.navlist{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 ul.navlist .nav_item a{
     position: relative;
     color: #FFFFFF;
+    font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
     margin: 0 1.8rem;
@@ -41,7 +43,7 @@ ul.navlist .active a::before,ul.navlist .nav_item:hover a::before{
     left: 0;
     width: 100%;
     height: 3px;
-    background: rgb(255, 0, 51);
+    background: rgb(249, 21, 67);
     border-radius: 3px;
 }
 .home_container{
@@ -74,7 +76,7 @@ ul.navlist .active a::before,ul.navlist .nav_item:hover a::before{
     margin: 2rem auto;
 }
 
-.text_container button{
+.text_container button, #HEALTHY button{
     outline: none;
     border: 2px white solid;
     background: transparent;
@@ -84,7 +86,7 @@ ul.navlist .active a::before,ul.navlist .nav_item:hover a::before{
     padding: 8px 35px;
     text-transform: uppercase;
 }
-.text_container button:hover{
+.text_container button:hover, #HEALTHY button:hover{
     background: white;
     color: #000;
     cursor: pointer;
@@ -107,4 +109,128 @@ ul.navlist .active a::before,ul.navlist .nav_item:hover a::before{
 .dots .active{
     transform: scale(1.2);
     border: #FFFFFF solid 4px;
+}
+
+/* Why Us Section */
+#WhyUs{
+    background: url(../images/us-bg.jpg);
+    color: #FFFFFF;
+    padding: 3rem;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover ;
+    padding-top: 2rem;
+}
+#WhyUs .container{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#WhyUs .container .title_container{
+    margin: 2rem auto;
+    width: fit-content;
+    text-align: center;
+    padding-top: 3rem;
+}
+#WhyUs .container .title_container h1{
+    font-size: 2rem;
+}
+hr{
+    width: 60px;
+    background: rgb(249, 21, 67);
+    height: 6px;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    margin-top: -2px;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+.wrapper .item{
+    width: 15rem;
+    margin: 2rem;
+}
+.wrapper .item h2{
+    font-size: 1.3rem;
+    margin: 0.4rem 0;
+}
+#HEALTHY{
+    background: url(../images/healthy-bg.jpg);
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+#HEALTHY .heading_holder{
+    margin: 2rem 0;
+}
+#HEALTHY .heading_holder h1{
+    font-size: 2rem;
+}
+#HEALTHY .text_holder{
+    width: 67%;
+    margin: 0 auto;
+}
+#HEALTHY .text_holder p{
+    margin-bottom: 2rem;
+}
+
+#Trainers{
+    background: url(../images/trainer-bg.jpg);
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+#Trainers .container .title_container h1{
+    font-size: 2rem;
+}
+#Trainers .wrapper{
+    margin: 3rem 0;
+}
+#Trainers .wrapper .card h1{
+    font-size: 1.3rem;
+    margin: 0.5rem;
+}
+#Trainers .wrapper .card{
+    margin: 0 1rem;
+}
+#Trainers .wrapper .card .user_picture{
+    border-radius: 1rem;
+    width: 20vw;
+    position: relative;
+}
+#Trainers .wrapper .card .container_wrapper{
+    position:relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center ;
+    background: #FFFFFF;
+    padding: 0.5rem 0;
+    width: 12vw;
+    top: -1.85rem;
+    /* left: 0; */
+    /* bottom: 1.75rem; */
+    height: 3.2rem;
+    margin: 0 auto;
+    /* z-index: 2; */
+    border-radius: 50px;
+
+}
+#Trainers .wrapper .card .container_wrapper a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
