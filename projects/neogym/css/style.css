@@ -193,6 +193,9 @@ hr{
     text-align: center;
     color: #FFFFFF;
 }
+#Trainers .container .title_container{
+    margin: 7vh 0;
+}
 #Trainers .container .title_container h1{
     font-size: 2rem;
 }
@@ -233,4 +236,88 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#ContactUs{
+    display: flex;
+    background: #27223F;
+    color: white;
+    text-align: center;
+    height: 100%;
+}
+.form_container{
+    
+    width: 100%;
+    padding-left: 2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.form_container h1{
+    font-size: 2rem;
+}
+.form_container hr{
+    margin: 4px 0;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.form input{
+    padding: 10px 12px;
+    margin: 1rem 0;
+    outline: 0;
+    border: 0;
+    font-size: 1rem;
+}
+#message{
+    color: #2b2b2b;
+    outline: 0;
+    border: 0;
+    padding: 3rem 1rem;
+}
+.form input::placeholder{
+    color: #2b2b2b;
+}
+.form button{
+    text-align: right;
+    width: fit-content;
+    align-self: flex-end;
+}
+#ContactUs #img1{
+    height: 54.5rem ;
+    object-fit: cover;
+}
+.form button{
+    outline: none;
+    border: 2px rgb(249, 21, 67) solid;
+    background:rgb(249, 21, 67);
+    margin:1rem 0 ;
+    font-size: 1rem;
+    color: white;
+    padding: 8px 65px;
+    text-transform: uppercase;
+}
+footer{
+    background: #252233;
+}
+footer .wrapper{
+    padding: 2rem;
+    color: #FFFFFF;
+}
+footer .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .item p{
+    margin: 1rem 0;
+}
+.copyright{
+    text-align: center;
+    padding: 1.3rem;
+    background: white;
 }
