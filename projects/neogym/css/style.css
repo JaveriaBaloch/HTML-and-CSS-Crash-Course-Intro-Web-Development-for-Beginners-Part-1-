@@ -131,7 +131,7 @@ ul.navlist .active a::before,ul.navlist .nav_item:hover a::before{
     margin: 2rem auto;
     width: fit-content;
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 4rem;
 }
 #WhyUs .container .title_container h1{
     font-size: 2rem;
@@ -176,7 +176,7 @@ hr{
     font-size: 2rem;
 }
 #HEALTHY .text_holder{
-    width: 67%;
+    width: 66rem;
     margin: 0 auto;
 }
 #HEALTHY .text_holder p{
@@ -211,7 +211,7 @@ hr{
 }
 #Trainers .wrapper .card .user_picture{
     border-radius: 1rem;
-    width: 20vw;
+    /* width: 20vw; */
     position: relative;
 }
 #Trainers .wrapper .card .container_wrapper{
@@ -239,13 +239,14 @@ hr{
 }
 #ContactUs{
     display: flex;
+    align-items: center;
+    justify-content: center;
     background: #27223F;
     color: white;
     text-align: center;
     height: 100%;
 }
 .form_container{
-    
     width: 100%;
     padding-left: 2rem;
     text-align: left;
@@ -287,7 +288,7 @@ hr{
     align-self: flex-end;
 }
 #ContactUs #img1{
-    height: 54.5rem ;
+    height: 50vw ;
     object-fit: cover;
 }
 .form button{
@@ -320,4 +321,114 @@ footer .item p{
     text-align: center;
     padding: 1.3rem;
     background: white;
+}
+@media only screen and (max-width:1400px)   {
+    #WhyUs .container{
+        width: 100%;
+        margin: 2rem auto;
+        text-align: center;
+    }
+    .wrapper .item{
+        width: 15rem;
+        margin: 2rem;
+    }
+    #Trainers .wrapper .card .user_picture{
+        border-radius: 1rem;
+        width: 17rem;
+        position: relative;
+    }
+    #Trainers .wrapper .card .container_wrapper{
+        position:relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center ;
+        background: #FFFFFF;
+        padding: 0.5rem 0;
+        width: 60%;
+        top: -1.85rem;
+        /* left: 0; */
+        /* bottom: 1.75rem; */
+        height: 3.2rem;
+        margin: 0 auto;
+        /* z-index: 2; */
+        border-radius: 50px;
+    
+    }
+    .form_container{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    #HEALTHY .text_holder{
+        width: 40rem;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width:800px) {
+    nav.nav ul.navlist{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav_item {
+        margin: 0.5rem 0;
+    }
+    #WhyUs .container{
+        width: 100%;
+        margin: 2rem auto;
+        text-align: center;
+    }
+    .wrapper .item{
+        width: 80%;
+        margin: 2rem;
+    }
+    #HEALTHY .text_holder{
+        width: 100%;
+        margin: 0 auto;
+    }
+    #Trainers .wrapper .card .user_picture{
+        border-radius: 1rem;
+        width: 100%;
+        position: relative;
+    }
+    #ContactUs{
+        flex-direction: column;
+
+    }
+    #ContactUs #img1{
+        width: 100%;
+        height: 100%;
+    }
+    .form_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .form_container hr{
+        margin: 0 auto;
+    }
+    .form_container .title_container{
+        margin-bottom: 1rem;
+    }
+    .form{
+        margin: 0rem;
+        width: 100%;
+    }
+    .form input{margin: 0.8rem 0;}
+    .form button{
+        /* width: 100%; */
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+    }
 }
