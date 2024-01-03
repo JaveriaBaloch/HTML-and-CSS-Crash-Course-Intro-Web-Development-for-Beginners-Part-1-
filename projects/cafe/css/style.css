@@ -127,6 +127,7 @@ section#menu{
     background-position: center;
     background-attachment: fixed;
     color: #FFFFFF;
+    padding-bottom: 6rem;
 }
 section#menu .title
 {
@@ -154,6 +155,7 @@ section#menu .card{
     padding: 2rem 1.5rem;
     margin: 2.5rem;
     border-radius: 10px;
+    padding-bottom: 3.5rem;
 }
 section#menu .card .item{
     padding: 0.8rem;
@@ -187,4 +189,208 @@ section#menu .card .item .details p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+section#about{
+    padding: 3rem 3rem ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100vh;
+    background: url(../img/antique-cafe-bg-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #FFFFFF;
+    padding-bottom: 6rem;
+}
+section#about .container{
+    width: 33rem;
+    margin-right:16vw ;
+}
+section#about .container .card{
+    background: rgba(255, 255, 255, 0.756);
+    color: #544639;
+    padding: 3rem 3rem;
+    border-radius: 10px;
+}
+section#about .container .card h1{
+    color: #006666;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+section#about .container .card p{
+    margin: 1.5rem 0;
+    color: #000000;
+    line-height: 2rem;
+}
+section#about .container .card p a{
+    color: #006666;
+    text-decoration: none;
+    transition: all;
+}
+section#about .container .card p a:hover{
+    color: red
+}
+
+section#about .container button{
+    margin: 2rem 0 ;
+    background:   #006666;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 16px 36px;
+    border-radius: 5px;
+}
+section#about .container button i{
+    margin-right:0.5rem ;
+    
+}
+section#contact{
+    padding: 2rem 3rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/antique-cafe-bg-04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #FFFFFF;
+    padding-top: 3rem;
+}
+section#contact .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section#contact .container .card{
+
+    width: 33rem;
+    margin: 2rem;
+}
+section#contact .container .card1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.756);
+    color: #544639;
+    padding: 3rem 3rem;
+    border-radius: 10px;
+}
+section#contact .container .card h1{
+    text-align: left;
+    color: #006666;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+section#contact .container .card p{
+    text-align: left;
+
+    margin: 0.2rem 0;
+    color: #000000;
+    line-height: 2rem;
+    font-size: 1.1rem;
+}
+section#contact .container .card p a{
+    color: #006666;
+    text-decoration: none;
+    transition: all;
+}
+section#contact .container button{
+    margin: 2rem auto;
+    background:   #006666;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 16px 36px;
+    border-radius: 5px;
+    text-align: center;
+}
+section#contact .container button a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+section#contact .container button i{
+    margin-right:0.5rem ;
+    
+}
+section#contact .container .card2{
+    position: relative;
+    background: #00000092;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    padding-bottom: 7rem;
+  
+}
+section#contact .container .card2 input,
+section#contact .container .card2 textarea{
+    width: 100%;
+    color: #FFFFFf;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px #FFCC65 solid ;
+    padding: 1rem 4px;
+    font-size: 1.1rem;
+    margin: 1rem;
+}
+section#contact .container .card2 input::placeholder,
+section#contact .container .card2 textarea::placeholder{
+    color: #ebeaea;
+}
+section#contact .container .card2 input:focus,
+section#contact .container .card2 textarea:focus{
+ 
+    border: 1px #FFCC65 solid ;
+    box-shadow: #FFCC65 0 0 5px ;
+   
+}
+section#contact .container .card2 button{
+    background: transparent;
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+    text-align: right;
+    margin-left: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+}
+section#contact .container .card2 button:hover{
+    color: #FFCC65;
+}
+footer{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+footer p{
+    font-weight: 400;
+    text-align: right;
+    font-size: 1.2rem;
+    width: 40%;
+}
+footer p a{
+    text-decoration: none;
+    color: #ebeaea;
+}
+footer p:nth-child(2n){
+    text-align: center;
 }
