@@ -1,0 +1,190 @@
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,700;0,800;0,900;1,700;1,800;1,900&family=Raleway:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+}
+main{
+    position: relative;
+}
+#intro{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/antique-cafe-bg-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #FFFFFF;
+}
+#intro nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    align-self: flex-start;
+    justify-self:flex-start ;
+    background: rgba(0, 0, 0, 0.672);
+    padding: 1rem;
+}
+
+#intro nav .navlist{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#intro nav .navlist li {
+    padding: 1rem;
+}
+#intro nav .navlist li a{
+    text-decoration: none;
+    color: #CC9966;
+    font-size: 1.5rem;
+}
+#intro .hero {
+    margin: 2rem auto;
+    height: fit-content;
+    width: 26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#intro .hero div{
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    text-align: center;
+    padding: 2rem 3rem;
+    margin: 0.5rem 0;
+}
+#intro .hero .card1 h1{
+    font-size: 3rem;
+    /* font-weight: bolder; */
+    font-family: 'Oswald', sans-serif;
+}
+#intro .hero .card1 p{
+    font-size: 1.2rem;
+    color: #CC9966;
+    margin: 1.5rem;
+    /* padding-bottom: 1rem; */
+}
+#intro .hero .card2{
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    text-align: justify;
+    font-weight: 300;
+    line-height: 2rem;
+    /* font-size: 1.2rem; */
+    color: #ffffff;
+    /* margin: 1.5rem; */
+    word-spacing: -2px;
+
+}
+#intro .hero .card2 a{
+    color: yellow;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+#intro .hero .card2 a:hover{
+    color: rgb(152, 232, 241);
+    text-decoration: none;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+#intro .hero button{
+    background: rgba(0, 0, 0, 0.7);
+    outline: none;
+    border: none;
+    color: #CC9966;
+    font-size: 1.2rem;
+    padding: 26px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.5s all;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+#intro .hero button:hover{
+    color: #FFFFFF;
+}
+section#menu{
+    padding: 3rem 3rem ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/antique-cafe-bg-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #FFFFFF;
+}
+section#menu .title
+{
+    background: white;
+    padding: 1.3rem 2rem;
+    margin: 3rem;
+    margin-top: 7rem;
+    border-radius: 10px;
+    color: #544639;
+}
+section#menu .title h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+
+}
+.row{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+section#menu .card{
+    width: 33rem;
+    background: #544639;
+    padding: 2rem 1.5rem;
+    margin: 2.5rem;
+    border-radius: 10px;
+}
+section#menu .card .item{
+    padding: 0.8rem;
+}
+section#menu .card .item img{
+    border-radius: 5px;
+}
+section#menu .card .item .details{
+    margin-left: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section#menu .card .item .details h2{
+    font-weight: 400;
+    color: #FFCC65;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+section#menu .card .item .details p{
+    margin-bottom: 1rem;
+}
+.card2 .row{
+    flex-direction: row-reverse;
+
+}
+.card2 .row .details{
+    margin-right: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
