@@ -31,6 +31,7 @@ main{
     justify-self:flex-start ;
     background: rgba(0, 0, 0, 0.672);
     padding: 1rem;
+    z-index: 1;
 }
 
 #intro nav .navlist{
@@ -145,15 +146,15 @@ section#menu .title h1{
 }
 .row{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
 }
 section#menu .card{
-    width: 33rem;
+    width: 32rem;
     background: #544639;
     padding: 2rem 1.5rem;
-    margin: 2.5rem;
+    margin: 2rem 1.5rem;
     border-radius: 10px;
     padding-bottom: 3.5rem;
 }
@@ -179,6 +180,9 @@ section#menu .card .item .details h2{
 section#menu .card .item .details p{
     margin-bottom: 1rem;
 }
+section#menu .card .item .row{
+    justify-content: flex-start;
+}
 .card2 .row{
     flex-direction: row-reverse;
 
@@ -196,7 +200,7 @@ section#about{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     min-height: 100vh;
     background: url(../img/antique-cafe-bg-03.jpg);
     background-repeat: no-repeat;
@@ -207,10 +211,17 @@ section#about{
     padding-bottom: 6rem;
 }
 section#about .container{
-    width: 33rem;
-    margin-right:16vw ;
+
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    /* margin-right:16vw ; */
 }
 section#about .container .card{
+    width: 45%;
+    /* width: 25rem; */
     background: rgba(255, 255, 255, 0.756);
     color: #544639;
     padding: 3rem 3rem;
@@ -264,8 +275,11 @@ section#contact{
     background-attachment: fixed;
     color: #FFFFFF;
     padding-top: 3rem;
+    position: relative;
+    z-index: 2;
 }
 section#contact .container{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -273,7 +287,7 @@ section#contact .container{
 }
 section#contact .container .card{
 
-    width: 33rem;
+    width: 32rem;
     margin: 2rem;
 }
 section#contact .container .card1{
@@ -282,7 +296,7 @@ section#contact .container .card1{
     text-align: center;
     background: rgba(255, 255, 255, 0.756);
     color: #544639;
-    padding: 3rem 3rem;
+    padding: 3rem 2rem;
     border-radius: 10px;
 }
 section#contact .container .card h1{
@@ -332,7 +346,7 @@ section#contact .container .card2{
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
     border-radius: 10px;
     padding-bottom: 7rem;
   
@@ -393,4 +407,70 @@ footer p a{
 }
 footer p:nth-child(2n){
     text-align: center;
+}
+@media only screen and (max-width:1230px)  {
+    section#menu{
+        padding: 3rem 0;
+    }
+    section#menu .card{
+        max-width: 27rem;
+        margin: 2rem 2rem;
+    }
+    section#about .container{
+        width: 90%;
+    }
+    section#about .container .card{
+        width: 33rem;
+    }
+    section#contact{
+        padding: 3rem 0;
+        padding-bottom: 7rem ;
+    }
+    footer{
+        /* flex-direction: column; */
+        width: 100%;
+    }
+    footer p:first-child{
+
+        width: 70%;
+        margin-left: 1rem;
+        text-align: left;
+    }
+}
+@media only screen and (max-width:767px){
+    nav{
+        padding: 0;
+    }
+    .navlist{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .navlist .nav_item{
+        width: fit-content;
+        /* margin: 0.3rm 0; */
+        margin-left: auto;
+        padding: 0;
+    }
+    .navlist li{
+        margin-top: -12px;
+        padding: 0;
+    }
+    .hero{
+        padding-top: 14rem;
+    }
+    section#contact{
+        padding-bottom:17rem ;
+    }
+    footer{
+
+        flex-direction: column;
+        width: 100%;
+    }
+    footer p:nth-child(1n){
+        width: 90%;
+        text-align: left;
+        margin: 1rem;
+    }
+
 }
