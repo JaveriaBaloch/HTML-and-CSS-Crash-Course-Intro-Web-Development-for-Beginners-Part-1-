@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, sans-serif;
+}
+#Home{
+    padding: 4rem;
+    background: url(../images/hearder.jpg);
+}
+#Home .card{
+    background: #E8E7ED;
+    padding: 2rem 3rem;
+    margin: 1rem;
+    border-radius: 3rem;
+    
+    /* width: 90%; */
+    /* margin: 0 auto; */
+}
+#Home .card nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Home .card nav .navigation{
+    list-style: none;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+#Home .card nav .navigation .nav_item{
+    margin: 0 1rem;
+}
+#Home .card nav .navigation .nav_item .nav_link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+#Home .card nav .navigation .nav_item .nav_link.active,#Home .card nav .navigation .nav_item .nav_link:hover{
+    padding-top: 3rem;
+    position: relative;
+    top: 10px;
+    color: #E4B74B;
+    margin-top: 30px;
+}
+#Home .card nav .navigation .nav_item .nav_link.active::before,#Home .card nav .navigation .nav_item .nav_link:hover::before{
+    position: absolute;
+    content: "";
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #E4B74B;
+}
+#Home .card nav .navigation .nav_item .nav_link.active::after,#Home .card nav .navigation .nav_item .nav_link:hover::after{
+    position: absolute;
+    content: "";
+    bottom: -12px;
+    left: 42%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #E4B74B;
+}
+
+#Home .card nav .navigation .nav_item .nav_link i{
+    color:  #E4B74B;
+}
+.fa-user{
+margin-right: 5px;
+}
+#Home .card .container{
+    margin-top: 6rem;
+}
+#Home .card .container .row{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+}
+#Home .card .container .row .col {
+    /* max-width: 55 rem; */
+    margin: 1rem;
+}
+#Home .card .container .row .col h2{
+    color: #E4B74B;
+    font-size: 2.5rem;
+}
+#Home .card .container .row .col h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.5rem;
+    letter-spacing: 0.7rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+#Home .card .container .row .col p{
+    line-height: 1.7rem;
+}
+#Home .card .container .row .col button{
+   background: #180B4D;
+   outline: none;
+   border: none;
+   color: white;
+   padding: 15px 30px;
+   border-radius: 8px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-transform: uppercase;
+   font-size: 1rem;
+   margin:2rem 0;
+   transition: all 0.5s;
+}
+#Home .card .container .row .col button:hover{
+    background: #E4B74B;
+    cursor: pointer;
+}
+#Home .card .container .row .col button img{
+    margin: 2px 5px;
+}
+#About{
+    padding: 3rem;
+    background: url(../images/abo_bg.jpg);
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+}
+#About .container{
+    width: 75%;
+    margin: 0 auto;
+}
+#About .container .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#About .container .wrapper img{
+    /* margin: 2rem; */
+    margin-right: 2rem;
+}
+#About .container .wrapper .text_container{
+    /* margin: 2rem; */
+    width: 42rem;
+}
+#About .container .wrapper .text_container .label{
+    color: #E4B74B;
+    font-weight: bolder;
+}
+#About .container .wrapper .text_container h1{
+    font-family: "Raleways",sans-serif;
+    font-weight: 500;
+    color: #202020;
+    font-size: 2.6rem;
+    margin: 1rem 0;
+}
+#About .container .wrapper .text_container p{
+   
+    color: #4A4A49;
+    line-height: 2rem;
+    font-size: 1.1rem;
+}
+#About button{
+    background: #180B4D;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin:2rem 0;
+    transition: all 0.5s;
+ }
+ #About button:hover{
+     background: #E4B74B;
+     cursor: pointer;
+ }
+
+ #Services{
+    padding: 3rem;
+    background: url(../images/service.jpg);
+    width: 100%;
+    background-position: bottom;
+    background-size: contain;
+    color: #E8E7ED;
+    padding-bottom: 5rem;
+}
+
+#Services .container {
+    width: 70%;
+    margin: 0 auto;
+}
+#Services .container .card_holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#Services .container .text_holder{
+    margin: 3rem 0;
+}
+#Services .container .text_holder .label{
+    color: #E4B74B;
+    font-weight: bolder;
+}
+#Services .container .text_holder h1{
+    font-family: "Raleways",sans-serif;
+    font-weight: 500;
+    color: #E8E7ED;
+    font-size: 2.6rem;
+    margin: 1rem 0;
+}
+#Services .card1 .img{
+    background: url(../images/services_icon1.png);
+    width: 12rem;
+    height: 7rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: all 1s;
+}
+#Services .card2 .img{
+    background: url(../images/services_icon2.png);
+    width: 12rem;
+    height: 7rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: all 1s;
+}
+#Services .card3 .img{
+    background: url(../images/services_icon3.png);
+    width: 12rem;
+    height: 7rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: all 1s;
+}
+#Services .card4 .img{
+    background: url(../images/services_icon4.png);
+    width: 12rem;
+    height: 7rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: all 1s;
+}
+#Services .card{
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all;
+}
+#Services .card .img{
+    margin-bottom: 2rem;
+}
+#Services.card h2{
+    transition: all 1s;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+#Services .card p{
+    text-align: center;
+    margin-bottom: 0.6rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+}
+#Services button{
+    background: #180B4D;
+    outline: none;
+    border: white 1px solid;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin:0.7rem 0;
+    transition: all 1s;
+ }
+ #Services .card1:hover .img{
+    background: url(../images/services_icon1h.png);
+    width: 12rem;
+    height: 7rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+ }
+ #Services .card2:hover .img{
+    background: url(../images/services_icon2h.png);
+    width: 12rem;
+    height: 7rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+ }
+ #Services .card3:hover .img{
+    background: url(../images/services_icon3h.png);
+    width: 12rem;
+    height: 7rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+ }
+ #Services .card4:hover .img{
+    background: url(../images/services_icon4h.png);
+    width: 12rem;
+    height: 7rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+ }
+ #Services .card:hover h2{
+    color: #E4B74B;
+ }
+ #Services .card:hover button{
+    background: #180B4D;
+    outline: none;
+    border: #E4B74B 1px solid;
+    color: #E4B74B;
+    padding: 15px 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    /* margin:1rem 0; */
+    transition: all 1s;
+ }
+ #News{
+    padding: 3rem;
+    background: url(../images/bg.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color: #E8E7ED; */
+    padding-bottom: 5rem;
+    min-height:100vh ;
+}
+#News .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#News .container .text_container{
+    margin: 2rem 0;
+    text-align: center;
+    width: 40rem;
+}
+#News .container .text_container .label{
+    color: #E4B74B;
+    font-weight: bolder;
+    margin: 1rem;
+}
+#News .container .text_container h1{
+    font-family: "Raleways",sans-serif;
+    font-weight: 500;
+    color: #202020;
+    font-size: 2.7rem;
+    margin: 1rem 0;
+    line-height: 3.5rem;
+}
+#News .container img{
+    width: 47rem;
+}
+#News button{
+    background: #180B4D;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin:2rem 0;
+    transition: all 0.5s;
+    margin-top: 4rem;
+ }
+ #News button:hover{
+     background: #E4B74B;
+     cursor: pointer;
+ }
+ #News .container2 .text_container{
+    width: 70%;
+ }
+
+ #News .container2 button{
+    margin-top: 2rem;
+ }
