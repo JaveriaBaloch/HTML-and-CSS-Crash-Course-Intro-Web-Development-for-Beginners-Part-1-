@@ -403,3 +403,146 @@ margin-right: 5px;
  #News .container2 button{
     margin-top: 2rem;
  }
+
+ #Subscribe{
+    background: url(../images/sub_bg.jpg);
+    padding: 3rem;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size:   100% 100%;
+    color: #E8E7ED;
+    background-repeat: no-repeat;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+
+    /* min-height:100v; */
+ }
+ #Subscribe .container{
+    width: 49rem;
+    margin: 7rem auto;
+    text-align: center;
+ }
+ #Subscribe .container h1{
+    transition: all 1s;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 2.3rem;
+ }
+ #Subscribe .container p{
+    margin: 1rem;
+    line-height: 2rem;
+    font-weight: 500;
+ }
+ #Subscribe .container .input_container{
+    display: flex;
+    background: #FFFFFF;
+    margin: 2rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+ }
+ #Subscribe .container .input_container input{
+    width: 70%;
+    outline: none;
+    border: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    padding-left:1.5rem ;
+ }
+ #Subscribe .container .input_container button{
+    background: #E4B74B;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: lowercase;
+    font-size: 1.1rem;
+    /* margin:2rem 0; */
+    transition: all 0.5s;
+    margin-right: 1rem;
+    /* margin-top: 4rem; */
+ }
+ #Subscribe .container .input_container button:hover{
+     background: #180B4D;
+     cursor: pointer;
+ }
+ #TESTIMONIAL{
+    /* background: url(../images/sub_bg.jpg); */
+    padding: 3rem;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    /* background-size:   100% 100%; */
+    /* color: #E8E7ED; */
+    background-repeat: no-repeat;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ #TESTIMONIAL .container{
+    width: 56rem;
+    text-align: center;
+ }
+ #TESTIMONIAL .container .heading_holder{
+    margin: 2rem 0;
+ }
+#TESTIMONIAL .container .heading_holder .label{
+    color: #E4B74B;
+    font-weight: bolder;
+    margin: 1rem;
+}
+#TESTIMONIAL .container .heading_holder h1{
+    font-family: "Raleways",sans-serif;
+font-weight: 500;
+color: #202020;
+font-size: 2.7rem;
+/* margin: 1rem 0; */
+line-height: 3.5rem;
+}
+#TESTIMONIAL .container .img_holder{
+
+    margin-top:3rem;
+    margin-bottom: 2rem;
+}
+#TESTIMONIAL .container .img_holder h2{
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 5px;
+    color: #202020;
+    border-bottom: #fbca47 solid 3px;
+    line-height: 26px;
+    text-transform: uppercase;
+    /* display: inline-block; */
+    padding-top: 25px;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+}
+#TESTIMONIAL .container .para_holder p{
+    line-height: 1.7rem;
+}
+#TESTIMONIAL .container .dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#TESTIMONIAL .container .dot{
+    width: 25px;
+    height: 25px;
+    background:#180B4D;
+    border-radius: 50%;
+    margin: 3rem 0.2rem;
+}
+#TESTIMONIAL .container .dot:nth-child(1){
+    background: #E4B74B;
+}
