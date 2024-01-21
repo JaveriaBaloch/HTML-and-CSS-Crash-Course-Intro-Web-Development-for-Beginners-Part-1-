@@ -1,0 +1,33 @@
+h1 {
+  color: #2186ab;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  background: #2186ab;
+}
+.nav .navlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.nav .navlist .nav_item {
+  margin: 2rem;
+}
+.nav .navlist .nav_item .nav_link {
+  text-decoration: none;
+  color: #fff;
+  transition: all 1s;
+}
+.nav .navlist .nav_item .nav_link:hover {
+  font-size: 3rem;
+  color: rgb(9, 26, 26);
+}
+
+/*# sourceMappingURL=style.css.map */

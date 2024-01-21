@@ -1,0 +1,19 @@
+.nav{
+    background: $primaryColor;
+    .navlist{
+        @include display-flex();
+        list-style: none;
+        .nav_item{
+            margin: 2rem;
+            .nav_link{
+                text-decoration: none;
+                color: #fff;
+                transition: all 1.0s;
+                &:hover{
+                   font-size: 3rem;
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+}
